@@ -1,0 +1,254 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f06, #48c6ef);
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px; /* Reducido aún más el padding */
+    border-radius: 12px; /* Esquinas más suaves */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px; /* Contenedor más pequeño */
+    width: 100%;
+    margin: 10px;
+    height: auto; /* Deja que el contenedor se ajuste al contenido */
+}
+
+/* Título */
+.title {
+    font-size: 28px; /* Reducido el tamaño del texto */
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px; /* Menos espacio debajo del título */
+    font-weight: bold;
+}
+
+/* Tarjetas */
+.card {
+    background: #fff;
+    border-radius: 8px; /* Bordes más suaves */
+    padding: 10px; /* Menos espacio dentro de las tarjetas */
+    margin-bottom: 10px; /* Espacio reducido entre tarjetas */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 20px; /* Título de las tarjetas más pequeño */
+    margin-bottom: 8px; /* Menos espacio debajo del título de la tarjeta */
+    color: #333;
+}
+
+.card p {
+    font-size: 16px; /* Texto más pequeño */
+    color: #666;
+}
+
+/* Botón */
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 25px; /* Menos padding */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px; /* Fuente más pequeña */
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto; /* Espacio reducido */
+    width: 180px; /* Botón más estrecho */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+input, select, button {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+input[type="text"], input[type="number"], select {
+    background-color: #f5f5f5;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #d45d50;
+}
+
+button:active {
+    background-color: #c44e46;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilo de resultados */
+.result-container {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-container p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.result-container button {
+    background-color: #4CAF50;
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.result-container button:hover {
+    background-color: #45a049;
+}
+
+/* Animaciones de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container, h1, form {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Efecto de sombra para el botón */
+button:hover {
+    box-shadow: 0 4px 15px rgba(255, 111, 97, 0.3);
+}
+
+/* Estilos de medios (Responsive Design) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    form {
+        gap: 20px;
+    }
+
+    input, select, button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input, select, button {
+        font-size: 0.95rem;
+    }
+}
